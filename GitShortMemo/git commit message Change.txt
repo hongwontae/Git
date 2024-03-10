@@ -1,0 +1,13 @@
+push를 하지 않았을 때를 가정
+
+가장 최근에 Commit 했던 메시지 수정하기
+git commit --amend
+
+일반적으로 commit message 수정하기
+git log => commit한 간략한 내용 보는 방법
+
+최근의 커밋부터 숫자까지 커밋 내용 텍스트 에디터에 뜨고 수정할 수 있게 만드는 명령어
+git rebase -i HEAD~숫자
+=> pick 부분을 reward로 바꾸고 git message를 바꾸면 된다.
+
+
