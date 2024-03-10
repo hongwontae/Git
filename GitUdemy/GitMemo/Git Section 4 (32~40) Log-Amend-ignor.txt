@@ -4,4 +4,16 @@ git log oneline => 해시코드와 git message가 한 줄로 되어있는 git lo
 
 
 2. Amend
-git commit --amend => 이전 커밋의 실행을 취소하는 명령어이다.
+git commit --amend
+=> 해당 시점에서 바로 전의 커밋의 메시지를 수정하는 명령어
+=> 해당 시점에서 staging Area에 있는 파일과 전의 commit 파일들을 합치는 명령어
+
+(이전 커밋으로 함께가야하는 파일인데 누락될 떄 사용하거나 바로 이전 커밋 메시지를 수정할 떄 사용한다.)
+
+
+3. git ignore
+.gitignore 파일을 통해 특정 파일이나 폴더를 git 흐름에서 제외시킨다.
+
+.DS_Store => 파일제외
+folderName/ => 파일이름
+*.log => 뒤에 log로 끝나는 모든 파일
