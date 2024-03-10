@@ -1,0 +1,7 @@
+1. git log High
+git log -- abbrev-commit => 해시코드 일부 생략한 git log
+git log oneline => 해시코드와 git message가 한 줄로 되어있는 git log
+
+
+2. Amend
+git commit --amend => 이전 커밋의 실행을 취소하는 명령어이다.
