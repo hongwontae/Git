@@ -19,4 +19,41 @@ HEAD를 브랜치 포인터라고 부른다.
 git branch branch-name => 브랜치 생성 (브랜치 이동은 하지 않음)
 git switch branch-name => 해당 브랜치 이름을 이동한다.
 
-branch를 생성하고 git log를 보면 해당 branch commit과 파생되기
+branch를 생성하고 git log를 보면 해당 branch commit과 파생된 시점의 branch의 commit들을 볼 수 있다.
+=> master의 a 지점에서 파생되어 main 브랜치가 생성되고 쭉 작업을 했다면 해당 지점에서 git log는 master a 파생 지점 현재와 과거 + 해당 브랜치 커밋 볼 수 있다. (이 후는 git log로 확인 불가)
+
+git의 브랜치를 생성하고 HEAD가 생성한 브랜치를 가르키고 commit을 하면 독자적인 줄기를 가지는 것이다.
+
+
+5. git checkout
+git checkout branch-name => 해당 Branch로 이동한다.
+git checkout -c(-b) branch-name => 브랜치를 생성하고 해당 브랜치로 이동한다.
+
+
+6. git branch 충돌
+branch의 변경사항들을 스테이징하지 않고 이동하면 대부분 에러가 발생한다.
+=> 스테이징 + 커밋을 한 뒤에 브랜치 이동하는 것을 git은 권장한다.
+
+만약 branch에서 만든 파일이나 변경사항이 충돌하지 않는다면 이동이 가능하다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ㄴ
