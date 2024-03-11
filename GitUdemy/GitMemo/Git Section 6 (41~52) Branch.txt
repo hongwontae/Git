@@ -18,3 +18,5 @@ HEAD를 브랜치 포인터라고 부른다.
 4. 브랜치 생성 및 전환
 git branch branch-name => 브랜치 생성 (브랜치 이동은 하지 않음)
 git switch branch-name => 해당 브랜치 이름을 이동한다.
+
+branch를 생성하고 git log를 보면 해당 branch commit과 파생되기
