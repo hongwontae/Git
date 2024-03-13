@@ -1,1 +1,58 @@
 1. git diff
+스테이지에 등록되지 않은 워킹 디렉토리의 변경사항을 모두 나열한다.
+
+1.1 워킹 디렉토리 vs 스테이징 아리아
+1.2 워킹 디렉토리 vs 최근 커밋
+=> git diff는 상황에 맞게 비교한다.
+=> 워킹 디렉토리 아무것도 없다면 비교할 수 없다.
+
+$ git diff
+diff --git a/color.txt b/color.txt (a는 기존 스테이징, 커밋/ b는 워킹디렉토리)
+index 0b75516..5ac6fae 100644 (파일의 메타데이터)
+--- a/color.txt (-는 기존 스테이징을 의미)
++++ b/color.txt (+는 워킹디렉토리)
+@@ -3,4 +3,5 @@ orange (-는 기존/ 숫자는 3라인에서 5개줄을 의미)
+ yellow (기존에 있던 것은 유지)
+ green
+ blue
+-purple (빨간색은 워킹 디렉토리에서 사라진 것)
+\ No newline at end of file
++indigo (초록색은 워킹 디렉토리에서 추가된 것)
++violet
+\ No newline at end of file
+
+
+2. git diff HEAD
+마지막 커밋 이후에 변경된 모든 변경사항을 나열한다.
+2-1. 워킹디렉토리와 최근 커밋
+2-2. 스테이징 아리아와 최근 커밋
+=> 상황에 맞게 비교한다.
+
+
+3. git diff --stafed/ git diff --cached
+스테이지에 등록된 변경사항만을 보여준다. => 스테이지 아리아와 최근 커밋을 비교한다.
+
+
+4. git diff HEAD [fileName]/ git diff --staged [fileName]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
