@@ -1,0 +1,58 @@
+1. Stash
+1-1. main과 ver2의 브랜치 있고 main에서 작업 커밋후 ver2로 이동한 뒤 충돌사항이 없는 작업을 한다.
+=> 이 떄 ver2에서 커밋을 하지않고 main으로 돌아갈 수 있다. ver2의 내역을 가지고 이동한다.
+=> 이 떄 main에서 commit을 해버리면 ver2의 내역을 오버라이딩한다.
+=> 그러나 병합은 아니다. 같은 내역을 두 개의 브랜치가 가지게 된 것이다.
+
+1-2. 위처럼 행동했으나 충돌사항이 있는 경우는 돌아가지 못한다. 이 떄 stash를 사용한다.
+
+
+2. git stash (git stash save)
+git stash (save)는 커밋을 하지 않고 다른 브랜치로 이동하거나 기타 외 작업을 할 수 있게 워킹 디렉토리와 스테이징 아리아의 사항들을 어느 공간에 저장하고 워킹 디렉토리와 스테이징 아리아를 임시적으로 비우는 명령어이다.
+
+git stash pop은 다시 꺼내는 작업을 의미한다.
+
+
+3. git apply
+git stash pop을 사용하면 stash의 저장내역을 해당 브랜치에 건네주고 기존 내역과 저장소를 삭제시킨다.
+git stash apply를 적용하면 원하는 브랜치마다 stash을 줄 수 있다. => 병합할 수 있다.
+
+
+4. Multi Stash
+git stash 명령어를 통해 여러개의 stash 영역을 가질 수 있다.
+git stash list를 통해 stash들을 볼 수 있다. 
+
+
+5. git stash drop/ git stash clear
+git stash drop (stash id) => stash id에 해당하는 stash를 삭제한다.
+git stash clear => stash를 전부 삭제한다.
+
+git stash는 branch에 종속된 것이 아니다. => 그렇기에 다른 브랜치에 적용하고 다른 브랜치에서 확인하고 삭제할 수 있다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

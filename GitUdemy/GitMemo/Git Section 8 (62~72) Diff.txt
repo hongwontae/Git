@@ -9,18 +9,21 @@
 $ git diff
 diff --git a/color.txt b/color.txt (a는 기존 스테이징, 커밋/ b는 워킹디렉토리)
 index 0b75516..5ac6fae 100644 (파일의 메타데이터)
---- a/color.txt (-는 기존 스테이징을 의미)
-+++ b/color.txt (+는 워킹디렉토리)
+--- a/color.txt (-는 기존 스테이징을 의미) // 기존 파일
++++ b/color.txt (+는 워킹디렉토리) // 변경된 내용
 @@ -3,4 +3,5 @@ orange (-는 기존/ 숫자는 3라인에서 5개줄을 의미)
  yellow (기존에 있던 것은 유지)
  green
  blue
--purple (빨간색은 워킹 디렉토리에서 사라진 것)
+-purple 
 \ No newline at end of file
-+indigo (초록색은 워킹 디렉토리에서 추가된 것)
++indigo 
 +violet
 \ No newline at end of file
 
+=> 기존 내역은 -/ 변경된 내역은 +
+=> 변경사항에 따라 색깔을 부여한다. 없어진 것은 빨간색, 추가된 것은 초록색이다.
+=> git diff는 기존 파일 중심에서 변경사항을 바라본다.
 
 2. git diff HEAD
 마지막 커밋 이후에 변경된 모든 변경사항을 나열한다.
@@ -34,10 +37,21 @@ index 0b75516..5ac6fae 100644 (파일의 메타데이터)
 
 
 4. git diff HEAD [fileName]/ git diff --staged [fileName]
+git diff [filename]/ git diff HEAD [filename]/ git staged(cached) [filename]
+=> filename에 입각한 diff를 보여준다. 파일은 여러개라도 상관없다.
 
 
+5. git diff branch1..branch2
+브랜치들의 비교 내역을 보여준다. .. 대신 공백을 사용해도 된다.
 
 
+6. git diff commit..commit
+커밋과 커밋을 비교한다. => 어느 시점인지는 중요하지 않다.
+git log --oneline의 해시코드를 사용하여 비교한다.
+
+
+*** 기준이 되는 파일이 a, -를 의미하고 변경사항이 b, +을 의미한다. ***
+=> 이 개념이 제일 중요하다. 그냥 외워라
 
 
 
