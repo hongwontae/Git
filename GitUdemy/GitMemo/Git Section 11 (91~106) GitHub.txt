@@ -26,7 +26,10 @@ git push <원격 nickname> <branchName> ex) git push origin main
 => 원래 대응되는 저장소는 main-main이지만 cats-main으로 push 하겠다는 뜻이다.
 
 
-5. 
+5. git push -u
+-u은 기본 브랜치를 설정하는 것이라고 생각하면 된다. 이를 설정하게 되면 git push/ git pull만 써도 된다.
+
+
 
 
 
