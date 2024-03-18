@@ -21,8 +21,26 @@ git clone 저장소를 가져오면 처음에는 main 브랜치의 파일, 이�
 
 
 4. git fetch
+GitHub 저장소에 추가정보가 존재하고 로컬 git 저장소에는 추가정보가 없을 떄 사용하는 명령어이다.
+
+local 저장소에 working directory와 staging Area을 덮어쓰지 않고 해당 커밋 지점보다 앞선 곳에 포인터를 만들고 gitHub 추가 정보를 가져오는 것이다. => git checkout 원격추적브랜치를 사용하면 fetch 포인터 확인가능
+
+git fetch origin(origin 안써도 된다.)/ git fetch origin branch-name (해당 브랜치만 fetch한다.)
+
+=> 이 상태에서는 파일이나 커밋 이력을 확인하거나 새로운 이력을 브랜치를 생성해서 가져가는 방법이 있다.
+=> git clone을 하든 git fetch을 하든 원격 추적 브랜치 + default 브랜치을 동기화한다.
 
 
+5. git pull
+git pull 원격Nickname 로컬브랜치Name => gitHub 저장 내역을 가져와서 통합한다. 병합 충돌이 생길 수 있다.
+빨기 감기 병합이라면 별 다른 문제는 생기지 않는다.
+=> 빨리 감기 병합이면 단순히 따라오는 것이기에 원격 추적 브랜치와 분리는 되지 않는다.
+
+
+6. git pull Merge
+만약 충돌 사항이 존재하면 충돌 사항 병합을 실행해야한다.
+새로운 커밋 시점이 생긴다. => push을 해야 원격 추적 브랜치와 일반 head가 같은 곳을 바라본다.
+=> 원격 추적 브랜치는 gitHub과 통신한 시점이기 때문이다.
 
 
 
