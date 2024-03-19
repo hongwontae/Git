@@ -8,4 +8,12 @@
 ## Step-1 깃이란 무엇인가?
 [Step1-Link](https://github.com/hongwontae/Git/blob/main/GitUdemy/GitMemo/Git%20Section%202%20(6~11)%20Git%20Definition.txt)
 
-## Step-2 깃이란 
+## Step-2 깃 초기 설정과 기초 터미널 명령어
+[Step2-Link](https://github.com/hongwontae/Git/blob/main/GitUdemy/GitMemo/Git%20Section%203%20(12~21)%20Git%20Setup.txt)
+
+## Step-3 git init, git status, git add, git commit, git log
+[Step3-Link](https://github.com/hongwontae/Git/blob/main/GitUdemy/GitMemo/Git%20Section%204%20(22~31)%20git%20Basic-git%20log.txt)
+
+## Step-4 git ignore 파일과 git log +, git commit --amend
+[Step4-Link](https://github.com/hongwontae/Git/blob/main/GitUdemy/GitMemo/Git%20Section%205%20(32~40)%20Log-Amend-ignor.txt)
+
