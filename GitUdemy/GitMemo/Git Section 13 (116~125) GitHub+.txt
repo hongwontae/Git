@@ -1,0 +1,60 @@
+1. Public Repo/ Private Repo
+Public이라면 Clone과 파일을 볼 수 있다.
+Private는 소유자가 허용한 사용자 외에 아무런 작업도 할 수 없다.
+
+설정을 통해 public => private/ private => public으로 변경할 수 있다.
+
+
+2. GitHub 공동작업자 추가하기
+변경사항을 push할 수 있도록 하는 것을 의미한다.
+
+Settings => Collaborators => add people (git fullName or email) => accept
+Settings은 소유자만 컨트롤할 수 있다.
+
+
+3. README.md
+git Project을 설명하는 파일을 의미한다.
+md => mark-down을 의미한다. (마크다운은 형식화된 텍스트를 만드는 구문을 의미한다.)
+
+markdown을 연습할 수 있는 페이지 => https://markdown-it.github.io
+touch README.md => 리드미 파일 생성
+리드미 파일이 깃 저장소의 루트 디렉토리에 존재하면 gitHub이 자동으로 렌더링한다.
+
+
+4. gitHub gist
+코드 조각을 간단히 공유하는 방법을 의미한다.
+
+
+5. git pages
+gitHub에서 제공하는 정적 웹 페이지를 호이스팅해주는 기능을 의미한다. (Just html, css ,js)
+
+Project-sites => 깃허브 저장소에 대해 호스팅된 웹사이트(username.github.io/repo-name)
+User-site => 일반적으로 사용할 수 있는 호스팅된 웹사이트 (username.github.io)
+
+Settings => Pages => branch 선택 => index.html => Save
+이 과정을 거치면 정적 웹 페이지가 호스팅된다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
