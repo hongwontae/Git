@@ -7,5 +7,10 @@
 
 2. Feature Branches
 어떤 업무를 하든 개별 브랜치에서 협업하는 형태를 의미한다.
+=> 하나의 브랜치에서 작업이 완료되면 일정 절차를 걸쳐 default Branch에 Merge한다.
+
+
+3. pull request
+
 
 
