@@ -5,7 +5,7 @@ git clone url => GitHub의 코드와 git 이력을 가져온다. 해당 저장�
 2. git remote
 git remote => 원격 닉네임
 git remote -v => 원격 닉네임 + url
-git remote add <name> <url> => 원격 - 로컬 연결
+git remote add <name> <url> => 원격추가
 git remote rename <old> <new> => 원격 닉네밍 교체
 git remote remove <name> => 원격 삭제
 

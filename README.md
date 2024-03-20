@@ -1,4 +1,4 @@
-# Git Study
+# Git
 
 ![icons8-힘내-96](https://github.com/hongwontae/Git/assets/128343635/8f20c984-ee98-4860-b523-5697d2e634f6)
 ![icons8-힘내-96](https://github.com/hongwontae/Git/assets/128343635/6bc92496-3bb4-4a6d-8926-32942f7535c5)
