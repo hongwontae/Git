@@ -24,6 +24,13 @@ Settings의 Branch protection rule을 사용하면 branch name pattern, Require 
 
 
 5. Fork
+타 저장소를 복제하여 자신의 깃허브 계정에 복사본을 생성한다. 이 복사본을 원본 저장소의 포크라고 부른다.
+=> git clone과 다름/ 타 깃 허브 저장소를 자신의 깃 허브 저장소로 가져오는 것
+
+
+6. Fork WorkFlow
+fork을 한 뒤 내 복사 원격 저장소을 clone한다. => 개발을 시작한다. => push할 권한이 없지만 pull request을 요청할 수있다. => 요청이 승인되면 merge된다. => 기존 원본 저장소를 pull하여 update한다.
+
 
 
 
