@@ -11,6 +11,35 @@
 
 
 3. pull request
+메인 브랜치에 병합하기 전 승인이나 반려를 하는 절차를 의미한다.
+=> 메인 브랜치를 무결하게 유지하기 위해 피처 브랜치에서 무분별하게 메인 브랜치로의 병합을 막고 절차를 거치게 하는 깃 허브의 기능을 의미한다.
+=> 깃 허브에서 풀 리퀘스트를 통해 Merge하고 각 사용자들이 로컬로 pull하여 가져오는 방식
+
+충돌사항이 생겼을 떄는 브라우저에서 처리할 수 있도록 gitHub이 제공하지만 불편하다.
+pull request에서 git fetch origin => git switch branch-name => merge
+
+
+4. 브랜치 보호 규칙 구성하기
+Settings의 Branch protection rule을 사용하면 branch name pattern, Require a pull request before merging.. 등을 설정 할 수 있다.
+
+
+5. Fork
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
