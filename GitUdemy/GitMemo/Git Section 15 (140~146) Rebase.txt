@@ -4,7 +4,38 @@ git merge + git history delete
 대규모 작업 중에 마스터 브랜치의 사항을 지속적으로 가져와야 한다. => bugfix, 기능추가, 검토, 삭제..
 이 떄 merge가 필요하다. 하지만 병합 커밋이 많이 생기면 git에 불필요한 이력을 만들어 낼 수 있다.
 
-git rebase를 사용하면 병합 커밋이 생기는 것이 아니라 default 브랜치의 끝에 내 브랜치가 붙게된다.
+git reabse는 머지 커밋을 생성하는 대신 히스토리를 재구성한다.
+=> default 브랜치의 끝부터 히스토리를 재배치한다.
+=> 히스토리를 재배치한다는 것은 커밋을 재생성한다는 뜻이다.
+
+*** rebase를 사용하면 current => ver2 brnach/ git branch main => main 브랜치 위에 ver2 브랜치를 올리는 작업이다.
 
 
-2. 
+2. rebase 원칙
+이미 공유한 커밋을 리베이스하면 안된다.
+=> 자신의 브랜치의 커밋을 재생성하여 rebase branch에 붙이는 것이기 떄문에 상호작용하는 인원들끼리 다른 커밋을 가지게 될 수 있다.
+
+
+3. git rebase 충돌
+git rebase main => 충돌 발생 => git reabse --abort(실행중인 rebase 중단) or Text-Editor에서 해결 => 해결이 되었다면 git rebase --continue으로 충돌사항을 해결했다고 git에게 알려준다.
+
+
+git rebase 시 충돌사항이 없다면 reabse 대상 브랜치는 이전부터 있었다고 판단하고 1자 라인을 만드는 것이다.
+git rebase 시 충돌사항 병합지점은 가장 최근 커밋이다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
