@@ -59,5 +59,5 @@
 [Step13-Link](https://github.com/hongwontae/Git/blob/main/GitUdemy/GitMemo/Git%20Section%2014%20(126~139)%20Cooperation.txt)
 ---
 
-## Step-14 git rebase
+## Step-14 git rebase-1 (git merge VS git rebase, git rebase branch)
 [Step14-Link](https://github.com/hongwontae/Git/blob/main/GitUdemy/GitMemo/Git%20Section%2015%20(140~146)%20Rebase.txt)
