@@ -1,1 +1,22 @@
-1. 
+1. git rebase -i head~n
+현재 브랜치의 끝을 기준으로 n만큼 돌아가고 각 커밋을 새로 생성한다.
+i => 인터렉티브 (커밋 메시지를 변경하거나 제거하거나 유지하는 키워드)
+
+
+2. git rebase -i head~n (commit message)
+해당 브랜치의 최종 커밋을 기준으로 n만큼 돌아간다고 명령어를 사용한다.
+text-editor가 pick => reword로 변경한다.
+message를 변경한다.
+
+* 이떄 내가 하나만 변경하더라도 n만큼의 커밋은 재생성된다.
+
+
+3. git rebase -i head~n (fixup)
+fixup을 할당한 커밋은 이전 커밋과 합쳐지고 커밋 메시지가 삭제된다.
+(3개의 커밋을 이전 커밋과 합치고 싶다면 3개의 커밋 모두 fixup을 주면 된다.)
+
+
+4. git rebase -i head~n (drop)
+drop을 할당하면 해당 커밋은 삭제된다.
+
+
