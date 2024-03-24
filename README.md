@@ -61,4 +61,8 @@
 
 ## Step-14 git rebase-1 (git merge VS git rebase, git rebase branch)
 [Step14-Link](https://github.com/hongwontae/Git/blob/main/GitUdemy/GitMemo/Git%20Section%2015%20(140~146)%20Rebase.txt)
+---
 
+## Step-15 git-rebase-2 (git rebase -i head~n / pick, reword, drop, fixup...)
+[Step15-Link](https://github.com/hongwontae/Git/blob/main/GitUdemy/GitMemo/Git%20Section%2016%20(147~151)%20Rebase-2.txt)
+---
