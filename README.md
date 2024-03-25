@@ -66,3 +66,6 @@
 ## Step-15 git-rebase-2 (git rebase -i head~n / pick, reword, drop, fixup...)
 [Step15-Link](https://github.com/hongwontae/Git/blob/main/GitUdemy/GitMemo/Git%20Section%2016%20(147~151)%20Rebase-2.txt)
 ---
+
+## Step-16 git-tag (git tag, git checkout tag, git tag -a, git tag -d...)
+[Steo16-Link](https://github.com/hongwontae/Git/blob/main/GitUdemy/GitMemo/Git%20Section%2017%20(153~162)%20git%20tag.txt)
