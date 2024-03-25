@@ -21,7 +21,6 @@ git rebase main => 충돌 발생 => git reabse --abort(실행중인 rebase 중�
 
 
 git rebase 시 충돌사항이 없다면 reabse 대상 브랜치는 이전부터 있었다고 판단하고 1자 라인을 만드는 것이다.
-git rebase 시 충돌사항 병합지점은 가장 최근 커밋이다.
 
 
 
