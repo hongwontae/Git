@@ -62,26 +62,6 @@ git에 key를 주면 컨텐츠를 반환한다.
 => 깃은 key-value 저장소이다.
 
 
-7. git hash-object로 해싱하기
-object의 git의 DB이다.
-저장되는 방식은 해시함수를 통해 해시코드를 기반으로 폴더와 파일을 생성하여 data를 저장한다.
-object 폴더의 하위 폴더로 해시 코드를 따서 2글자 폴더를 생성하고 2글자를 제외한 파일을 생성한다.
-
-echo "hello"| git hash-object --stdin => 문자열에 대한 해시코드를 반환한다. (저장 x)
-echo "hello"| git hash-object --stdin -w => 문자열에 대한 해시코드를 생성하고 obj 폴더에 데이터를 저장한다.
-
-git hash-object filename => 파일의 해시코드를 반환한다. (저장 x)
-git hash-object filename -w => 파일의 해시코드를 생성하고 obj 폴더에 데이터를 저장한다.
-
-=> 폴더에 파일을 직접적으로 읽거나 꺼내올 수 없다.
-
-
-8. git cat-file
-git cat-file -p hashcode => objects의 데이터를 꺼내오는 명령어
-git cat-file -p hascode > filename => file에 해당 해시코드에 데이터를 집어넣는다. (수동)
-
-git은 파일단위로 해시코드를 생성하고 objects에 저장하는 것이 아니다.
-git은 스냅샷 단위로 해시코드를 생성하고 objects에 저장한다.
 
 
 

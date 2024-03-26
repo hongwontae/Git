@@ -1,0 +1,63 @@
+1. git hash-object로 해싱하기
+object의 git의 DB이다.
+저장되는 방식은 해시함수를 통해 해시코드를 기반으로 폴더와 파일을 생성하여 data를 저장한다.
+object 폴더의 하위 폴더로 해시 코드를 따서 2글자 폴더를 생성하고 2글자를 제외한 파일을 생성한다.
+
+echo "hello"| git hash-object --stdin => 문자열에 대한 해시코드를 반환한다. (저장 x)
+echo "hello"| git hash-object --stdin -w => 문자열에 대한 해시코드를 생성하고 obj 폴더에 데이터를 저장한다.
+
+git hash-object filename => 파일의 해시코드를 반환한다. (저장 x)
+git hash-object filename -w => 파일의 해시코드를 생성하고 obj 폴더에 데이터를 저장한다.
+
+=> 폴더에 파일을 직접적으로 읽거나 꺼내올 수 없다.
+
+
+2. git cat-file
+git cat-file -p hashcode => objects의 데이터를 꺼내오는 명령어
+git cat-file -p hascode > filename => file에 해당 해시코드에 데이터를 집어넣는다. (수동)
+
+git은 파일단위로 해시코드를 생성하고 objects에 저장하는 것이 아니다.
+git은 스냅샷 단위로 해시코드를 생성하고 objects에 저장한다.
+
+
+3. blob (Binary Large Object)
+blob => 파일 내용을 저장하는 obj이다. 파일 이름 저장 x/ 파일 내용 저장 o
+깃은 파일이름과 파일 내용을 각각 저장한다.
+SHA-1 해시 함수를 통해 블롭 해시를 갖게된다. => 크게 다른 것은 없다.
+
+
+4. Tree
+Tree => 깃 객체로서, 디렉토리 내용을 저장한다. 트리는 블롭을 가리키는 포인터와 트리를 가리키는 포인터 둘 다 갖고 있다. 트리 또한 자신의 해시 값을 가지고 있다.
+Tree 안에 블랍의 내용을 저장하지 않는다. 트리는 구조를 저장하는 역할이다.
+Tree의 구성 항목은 블롭 참조 값이나 파일 이름, 하위 디렉토리 값이 존재한다.
+** 트리는 폴더를 의미한다. 트리안에는 블롭, 블롭해시값, 파일name, 폴더 name
+
+git cat-file -p main^{tree} => 해당 git 저장소의 트리를 보여주는 명령어
+git cat-file -t => 어떤 객체인지 알려주는 명령어
+
+=> 트리는 해당 시점의 폴더 구조의 스냅샷인 것이다.
+
+5. Commit
+commit을 실행하면 커밋 객체를 생성하고 HEAD가 가리키는 커밋을 부모로 설정한다.
+
+0-0-0
+11-1. commit 객체는 tree, parent, author, commiter, message가 존재한다.
+11-2. 모든 커밋은 참조하는 부모 커밋이 있다. 부모 커밋 해쉬를 참조한다. (첫 번쨰 커밋은 예외)
+11-3. tree는 인덱스, 스테이지 영역에 있는 컨텐츠(작업내용, 변경사항) => commit 명령어가 실행될 떄 트리로 생성된다.
+11-4. parent가 git history을 구성한다.
+
+
+깃은 blob, tree, commit을 해시로 인식하고 변화가 있다면 해시 함수를 통해 다른 출력값을 만들어낸다.
+
+
+
+
+
+
+
+
+
+
+
+
+
