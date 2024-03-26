@@ -1,1 +1,73 @@
-1. 
+1. .git directory
+.git 안에 config라는 설정 파일이 존재한다. => 이를 통해서 git의 이름, 이메일, 색깔 등을 설정할 수 있다.
+
+git config user.name "name" => user's name
+git config user.email "e-mail" => use's emial
+--local 키워드를 통해 로컬로 설정가능
+
+-- .config 파일안에서의 barnch 설정
+[color]
+ui = true
+[color "branch"]
+local = cyan bold
+[color "diff"]
+old = magenta bold
+
+
+2. refs Folder
+.git 안에 refs라는 폴더가 존재하고 하위 폴더 heads, remotes, tags가 존재한다.
+refs는 포인터 혹은 참조 값이 저장된다. (커밋 참조값, 태그 참조, checkout...)
+
+.git/heads
+브랜치가 현재 참조하고 있는 커밋 해쉬를 가지고 있다. => 브랜치가 가리키고 있는 커밋 해쉬
+
+.git/remotes
+원격 저장소별로 하위 폴더가 존재한다. (origin, hwt)
+=> 원격 추적 브랜치가 가리키는 커밋 해쉬
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
