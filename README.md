@@ -68,4 +68,9 @@
 ---
 
 ## Step-16 git-tag (git tag, git checkout tag, git tag -a, git tag -d...)
-[Steo16-Link](https://github.com/hongwontae/Git/blob/main/GitUdemy/GitMemo/Git%20Section%2017%20(153~162)%20git%20tag.txt)
+[Step16-Link](https://github.com/hongwontae/Git/blob/main/GitUdemy/GitMemo/Git%20Section%2017%20(153~162)%20git%20tag.txt)
+---
+
+## Step-17 git Hasing and Object (.git directory, blob, Tree, commit)
+[Step17-Link](https://github.com/hongwontae/Git/blob/main/GitUdemy/GitMemo/Git%20Section%2018%20(163~174)%20Hashing-Object-2.txt)
+---
