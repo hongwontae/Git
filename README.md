@@ -75,3 +75,7 @@
 [Step17-1-Link](https://github.com/hongwontae/Git/blob/main/GitUdemy/GitMemo/Git%20Section%2018-1%20(163~174)%20Hashing-Object-1.txt)
 [Step-17-2-Link](https://github.com/hongwontae/Git/blob/main/GitUdemy/GitMemo/Git%20Section%2018-2%20(163~174)%20Hashing-Object-2.txt)
 ---
+
+## Step-18 git reflog
+[Step18-Link](https://github.com/hongwontae/Git/blob/main/GitUdemy/GitMemo/Git%20Section%2019%20(175~182)%20Reflog.txt)
+---
