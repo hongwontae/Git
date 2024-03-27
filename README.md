@@ -72,5 +72,6 @@
 ---
 
 ## Step-17 git Hasing and Object (.git directory, blob, Tree, commit)
-[Step17-Link](https://github.com/hongwontae/Git/blob/main/GitUdemy/GitMemo/Git%20Section%2018%20(163~174)%20Hashing-Object-.txt)
+[Step17-1-Link](https://github.com/hongwontae/Git/blob/main/GitUdemy/GitMemo/Git%20Section%2018-1%20(163~174)%20Hashing-Object-1.txt)
+[Step-17-2-Link](https://github.com/hongwontae/Git/blob/main/GitUdemy/GitMemo/Git%20Section%2018-2%20(163~174)%20Hashing-Object-2.txt)
 ---
