@@ -27,16 +27,29 @@ git reflog show HEAD@{n} => head가 n번쨰부터 마지막까지의 reflog를 �
 
 5. reflog timeStamp
 reflog 모든 항목에는 그에 해당하는 타임스탬프가 존재한다.
+=> .git의 logs의 파일들에는 timeStamp가 존재한다. 이를 이용할 수 있다.
 
 git reflog branch-name@{one.(week, days, yesterday...).age}
 => 해당 시간의 타임스탬프부터 표현가능한 과거이력까지 보여준다.
 
 타임스탬프는 {}안 표현식에 들어갈 수 있다. 
-=> git reflog show HEAD@{timeStamp} 가능
+=> git reflog show HEAD(branch-name...)@{timeStamp} 가능
 
 diff
 => git diff main ver2@{yesterday}
 
 head 분리
 => git checkout main@{1.week.ago}
+
+
+6. reflog commit 복구
+git reset --hard 커밋해쉬 or head~n  or head@{n}
+=> 과거의 커밋으로 돌아가고 그 앞에 있는 커밋을 삭제한다.
+=> 그럼에도 reflog에는 사라진 커밋에 대한 기록이 남겨져있다.
+
+git reset --hard (삭제된 커밋해쉬 or head~n...)
+=> 사라진 커밋이 복귀하고 head가 사라진 커밋을 가리킨다.
+
+*** 이러한 방식으로 사라진 커밋에 대해 복구할 수 있다. 
+*** 그러나 90일 이후에는 불가능하고 log들은 local에 한정되어 있다.
 
