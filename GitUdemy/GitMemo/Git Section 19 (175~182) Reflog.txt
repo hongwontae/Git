@@ -53,3 +53,10 @@ git reset --hard (삭제된 커밋해쉬 or head~n...)
 *** 이러한 방식으로 사라진 커밋에 대해 복구할 수 있다. 
 *** 그러나 90일 이후에는 불가능하고 log들은 local에 한정되어 있다.
 
+
+7. reflog을 통해 rebase 취소하기
+git rebase -i head~n 
+=> interactive rebase을 통해 commit을 수정하면 commit이 수정되고 재탄생한다.
+=> rebase fixup을 하여 하나로 만들었다고 해도 해당 branch의 reflog는 과거의 이력을 갖고 있다.
+
+
