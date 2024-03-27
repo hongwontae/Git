@@ -1,0 +1,52 @@
+1. 전역 Git 구성 파일
+설정은 세 방향이다. (local, global, system)
+
+--local
+.git/config file => 해당 저장소의 설정
+
+ --global
+cat /.gitconfig => 명령창에 .gitconfig 파일 내역을 볼 수 있다.
+user/.gitconfig 파일이 존재한다.
+git config --global user.name "...." => 모든 저장소의 user.name을 설정한다.
+
+
+2. user/.gitconfig에서 Alias 지정하기
+Alias는 기존의 git 명령어에 대응하는 사용자가 만들어낸 이름을 의미한다.
+git status => git s or git stat
+
+전역적 설정 파일 or 로컬 설정 파일 or 명령창에서 Alias를 지정한다.
+
+.gitconfig
+[alias]
+   l = log => git l
+   stat = status => git stat
+=>명령창에 Alias를 사용해서 축약 명령어 사용가능
+
+
+3. 명령창 Alias
+git config --global alias.b branch => b = branch
+git b => 브랜치 이름을 나열하는 명령어 (alias 축약 구문)
+
+
+4. 인자가 있는 Alias 명령
+commit -m = cm => git cm "first commit " => 가능하다.
+origin main => om => 가능하다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
