@@ -1,0 +1,6 @@
+1. reflog(referenct log)
+깃이 보관하는 기록이다. 
+=> head가 참조하고 있는 커밋이 변경될 떄마다 기록한다.
+
+.git의 logs폴더의 HEAD는 HEAD의 이동을 기록한 공간이다.
+
